@@ -1,10 +1,14 @@
 # Bases Meteor JS
 
+## Aperçu
 
 Nous allons découvrir Meteor qui est un framework JavaScript qui permet de faire des Web Apps ou encore des applications mobiles hybrides.
 Tout d'abord MeteorJS vous permet d'écrire du JavaScript côté client et côté serveur grâce à NodeJS.
+Meteor utilise MongoDB qui est une base de données NoSQL open-source.
+
 
 ## Pourquoi Meteor ?
+
 * Meteor n'envoie pas de code HTML, il envoie des données au client qui va se charger d'afficher les données.
 * Un seule language pour le côté client et le côté serveur.
 * Vous pouvez accéder à la base de donnée côté client grâce à Mini Mongo.
@@ -12,6 +16,7 @@ Tout d'abord MeteorJS vous permet d'écrire du JavaScript côté client et côt�
 * Meteor est open-source [GitHub] (https://github.com/meteor/meteor "GitHub") et comptent plus de 250 contributeurs.
 
 ## Installation
+
 Pour installer Meteor éxécuter la commande suivante dans votre terminal :
 `curl https://install.meteor.com/ | sh`
 
@@ -63,14 +68,23 @@ Après avoir créer votre application Meteor vous pouvez voir que Meteor a déj�
 
 Meteor génère également un dossier caché: *.meteor*
 Il ne faut **jamais** modifier directement des fichiers de ce dossier, il permet de faire fonctionner Meteor.
+Le fichier **package.json** est un fichier de configuration pour l'installation de package NPM.
 
 ### Le nom des dossiers et fichiers
-
 Les fichiers et dossiers ne vont pas être exécuter au même moment selon leur nom :
 
-* Les fichiers se trouvant dans le dossier */client* seront exécutés uniquement sur le navigateur.
-* Les fichiers se trouvant dans le dossier */server* seront exécutés uniquement sur le serveur.
-* Vous pouvez créer un dossier */both* qui s'exécutera côté client et serveur.
-* Le dossier */lib* est exécuté en premier
-* Les fichiers __main.*__ sont exécutés en dernier.
+* Les fichiers de template HTML sont **toujours** chargés avant tout.
+* Les fichiers se trouvant dans le dossier */client* seront chargés uniquement sur le navigateur.
+* Les fichiers se trouvant dans le dossier */server* seront chargés uniquement sur le serveur.
+* Vous pouvez créer un dossier */both* qui se chargera côté client et serveur.
+* Le dossier */lib* est chargé en premier.
+* Les fichiers __main.*__ sont chargés en dernier.
 * Le dossier */public* contient les éléments publics (images, vidéos, fonts).
+* Les fichiers sont chargés dans l'ordre alphabétique.
+* Les fichiers ayant un chemin plus profond dans l'arborescence sont chargés en dernier.
+
+## Ressources
+
+Vous pouvez parcourir la [documentation officielle] (http://docs.meteor.com/ "documentation officielle") de Meteor.
+Une suite de vidéo pour [approfondir (en anglais)] (https://www.youtube.com/watch?v=BI8IslJHSag&list=PLLnpHn493BHFYZUSK62aVycgcAouqBt7V "approfondir (en anglais)") Meteor.
+Le forum officiel de Meteor [ici] (https://forums.meteor.com/ "Forum officiel de Meteor").
