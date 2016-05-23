@@ -20,10 +20,10 @@ Une fois installer vous pouvez créer un projet :
 
 Ensuite éxécuter votre application en local :
 ```
-  cd myapp
-  meteor npm install
-  meteor
-  // Meteor server running on: http://localhost:3000/
+cd myapp
+meteor npm install
+meteor
+// Meteor server running on: http://localhost:3000/
 ```
 
 
@@ -43,3 +43,34 @@ Le préfixe est le nom d'utilisateur du développeur Meteor ou de l'organisation
 
 ### Désinstaller un package Atmoshpere
 `meteor remove prefix:package-name`
+
+
+## Structure de l'application
+
+Lorsque Meteor va s'executer il va compiler tous les fichiers qui se trouvent dans votre application.
+Après avoir créer votre application Meteor vous pouvez voir que Meteor a déjà généré des dossier et fichiers.
+
+```
+- .meteor
+- client
+  - main.css
+  - main.html
+  - main.js
+- package.json
+- server
+  - main.js
+```
+
+Meteor génère également un dossier caché: *.meteor*
+Il ne faut **jamais** modifier directement des fichiers de ce dossier, il permet de faire fonctionner Meteor.
+
+### Le nom des dossiers et fichiers
+
+Les fichiers et dossiers ne vont pas être exécuter au même moment selon leur nom :
+
+* Les fichiers se trouvant dans le dossier */client* seront exécutés uniquement sur le navigateur.
+* Les fichiers se trouvant dans le dossier */server* seront exécutés uniquement sur le serveur.
+* Vous pouvez créer un dossier */both* qui s'exécutera côté client et serveur.
+* Le dossier */lib* est exécuté en premier
+* Les fichiers __main.*__ sont exécutés en dernier.
+* Le dossier */public* contient les éléments publics (images, vidéos, fonts).
