@@ -85,6 +85,6 @@ Les fichiers et dossiers ne vont pas être exécuter au même moment selon leur 
 
 ## Ressources
 
-Vous pouvez parcourir la [documentation officielle] (http://docs.meteor.com/ "documentation officielle") de Meteor.
-Une suite de vidéo pour [approfondir (en anglais)] (https://www.youtube.com/watch?v=BI8IslJHSag&list=PLLnpHn493BHFYZUSK62aVycgcAouqBt7V "approfondir (en anglais)") Meteor.
-Le forum officiel de Meteor [ici] (https://forums.meteor.com/ "Forum officiel de Meteor").
+* Vous pouvez parcourir la [documentation officielle] (http://docs.meteor.com/ "documentation officielle") de Meteor.
+* Une suite de vidéo pour [approfondir (en anglais)] (https://www.youtube.com/watch?v=BI8IslJHSag&list=PLLnpHn493BHFYZUSK62aVycgcAouqBt7V "approfondir (en anglais)") Meteor.
+* Le forum officiel de Meteor [ici] (https://forums.meteor.com/ "Forum officiel de Meteor").
