@@ -37,10 +37,11 @@ meteor
 Dans une application Meteor vous pouvez ajoutez des packages.
 Ces packages sont de petites librairies construites qui vous permettent d'intégrer directement un système de connexion et authentification, une librairie existante ou un framework (Bootstrap, semantic-ui).
 
-Il existe un site qui repertorie les packages [Atmosphere] (https://atmospherejs.com/ "Atmosphere").
-Ou [Site de NPM] (https://www.npmjs.com/ "Site NPM").
-Vous pouvez vous aussi créer votre packages **Atmosphere** [guide] (http://guide.meteor.com/writing-atmosphere-packages.html "guide").
-Ou créer votre packages **NPM** [guide] (http://guide.meteor.com/writing-npm-packages.html "guide").
+* Il existe un site qui repertorie les packages [Atmosphere] (https://atmospherejs.com/ "Atmosphere").
+* Ou [Site de NPM] (https://www.npmjs.com/ "Site NPM").
+
+* Vous pouvez vous aussi créer votre packages **Atmosphere** [guide] (http://guide.meteor.com/writing-atmosphere-packages.html "guide").
+* Ou créer votre packages **NPM** [guide] (http://guide.meteor.com/writing-npm-packages.html "guide").
 
 ### Nom du package
 Excepté les packages de la plate-forme Meteor, tous les packages sur [Atmosphere] (https://atmospherejs.com/ "Atmosphere") ont un préfixe *prefix:package-name*.
